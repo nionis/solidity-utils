@@ -5,6 +5,7 @@
   "author": "Steven Noni",
   "license": "ISC",
   "dependencies": {
+    "lowdb": "^1.0.0",
     "zeppelin-solidity": "^1.8.0"
   },
   "devDependencies": {
