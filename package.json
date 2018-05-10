@@ -6,6 +6,7 @@
   "license": "ISC",
   "dependencies": {
     "lowdb": "^1.0.0",
+    "openzeppelin-solidity": "^1.9.0",
     "zeppelin-solidity": "^1.8.0"
   },
   "devDependencies": {

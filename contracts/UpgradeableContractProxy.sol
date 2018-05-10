@@ -1,10 +1,22 @@
 pragma solidity ^0.4.23;
 
+import "openzeppelin-solidity/contracts/ownership/rbac/RBACWithAdmin.sol";
 
-contract UpgradeableContractProxy {
+
+contract UpgradeableContractProxy is RBACWithAdmin {
+  bool private _upgradable = true;
   address private _currentImplementation;
 
-  function updateImplementation(address _newImplementation) public {
+  modifier onlyWhenUpgradable () {
+    require(_upgradable);
+    _;
+  }
+
+  function disableUpgradability() public onlyAdmin {
+    _upgradable = false;
+  }
+
+  function updateImplementation(address _newImplementation) public onlyAdmin onlyWhenUpgradable {
     require(_newImplementation != address(0));
     _currentImplementation = _newImplementation;
   }
