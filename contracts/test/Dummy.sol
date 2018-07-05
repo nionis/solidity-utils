@@ -1,8 +1,8 @@
 pragma solidity ^0.4.23;
 
-import "./FromBytes32.sol";
-import "./FromBytes32Arr.sol";
-import "./FromString.sol";
+import "../FromBytes32.sol";
+import "../FromBytes32Arr.sol";
+import "../FromString.sol";
 
 
 contract Dummy {

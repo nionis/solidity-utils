@@ -1,14 +1,9 @@
 {
   "name": "solidity-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Random solidity utilities",
   "author": "Steven Noni",
   "license": "ISC",
-  "dependencies": {
-    "lowdb": "^1.0.0",
-    "openzeppelin-solidity": "^1.9.0",
-    "zeppelin-solidity": "^1.8.0"
-  },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
@@ -17,7 +12,6 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "truffle": "^4.1.7",
-    "web3-utils": "^1.0.0-beta.30"
+    "truffle": "^4.1.7"
   }
 }
